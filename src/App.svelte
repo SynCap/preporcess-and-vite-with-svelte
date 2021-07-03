@@ -24,7 +24,7 @@ $: {
 
 	head
 		h1 {title}
-		p Svelte template with preprocess under Vite bundler
+		p Svelte template with #[b preprocess] under #[b Vite] bundler
 		p Typescript processor is tuned on to use ESbuild
 		p That is this template is ready to heavy projecting
 		p Punch the green buttons to shift the dice
@@ -38,10 +38,12 @@ $: {
 							use(href=`#c${i}`)
 
 	.controls
-		button(on:click!='{()=> dX -= delta}' title='-X') &#8678;
-		button(on:click!='{()=> dY += delta}' title='+Y') &#8681;
-		button(on:click!='{()=> dY -= delta}' title='-Y') &#8679;
-		button(on:click!='{()=> dX += delta}' title='+X') &#8680;
+		p
+			button(on:click!='{()=> dY -= delta}' title='-Y') &#8679;
+		p
+			button(on:click!='{()=> dX -= delta}' title='-X') &#8678;
+			button(on:click!='{()=> dY += delta}' title='+Y') &#8681;
+			button(on:click!='{()=> dX += delta}' title='+X') &#8680;
 
 </template>
 
@@ -65,9 +67,12 @@ head
 	position fixed
 	bottom 2rem
 	width 100%
-	display flex
-	justify-content center
-	gap 1rem
+
+	p
+		margin 1rem
+		display flex
+		justify-content center
+		gap 1rem
 
 	button
 		color white
@@ -79,6 +84,11 @@ head
 		font-size 2rem
 		min-width 5rem
 		box-shadow 0 1rem .3rem .2rem alpha(#000, .5)
+		cursor pointer
+		transition all .4s
+
+		&:hover
+			background-color alpha(lime, .9)
 
 $baseSize = 300px
 $halfSize = ($baseSize / 2)

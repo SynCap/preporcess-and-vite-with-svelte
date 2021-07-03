@@ -66,6 +66,12 @@ head
 	h1,p
 		margin .5em 0
 
+	a
+		text-decoration none
+		border-bottom 2px dashed
+		font-weight bold
+		color inherit
+
 .controls
 	position fixed
 	bottom 2rem
@@ -86,7 +92,7 @@ head
 		font-weight 900
 		font-size 2rem
 		min-width 5rem
-		box-shadow 0 1rem .3rem .2rem alpha(#000, .5)
+		box-shadow 0 1rem .5rem .5rem alpha(#000, .2)
 		cursor pointer
 		transition all .4s
 
@@ -94,6 +100,7 @@ head
 			transform translateY(-50%)
 
 		&:hover
+			box-shadow 0 1rem .5rem alpha(#000, .5)
 			background-color alpha(lime, .9)
 
 $baseSize = 300px

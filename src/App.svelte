@@ -23,9 +23,12 @@ $: {
 		title {title}
 
 	head
-		h1 {title}
-		p Svelte template with #[b preprocess] under #[b Vite] bundler
-		p Typescript processor is tuned on to use ESbuild
+		h1(title='Vaya Con Dios') {title}
+		p.
+			#[a(href='https://svelte.dev') Svelte] template with
+			#[a(href='https://github.com/sveltejs/svelte-preprocess') preprocess]
+			under #[a(href='https://vitejs.dev') Vite] bundler
+		p #[a(href='https://www.typescriptlang.org/') Typescript ] processor is tuned on to use #[a(href='https://esbuild.github.io/') ESbuild]
 		p That is this template is ready to heavy projecting
 		p Punch the green buttons to shift the dice
 

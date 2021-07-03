@@ -23,7 +23,8 @@ $: {
 		title {title}
 
 	head
-		h1(title='Vaya Con Dios') {title}
+		h1(title='Vaya Con Dios')
+			a(href='https://github.com/SynCap/preporcess-and-vite-with-svelte') {title}
 		p.
 			#[a(href='https://svelte.dev') Svelte] template with
 			#[a(href='https://github.com/sveltejs/svelte-preprocess') preprocess]
@@ -55,7 +56,7 @@ head
 	display block
 	color alpha(white, .7)
 	text-shadow .1em .1em .1em alpha(black, .5)
-	border-bottom .15px dashed
+	// border-bottom .15px dashed
 	max-width 37rem
 	margin 2rem auto
 	padding 1rem
@@ -66,11 +67,11 @@ head
 	h1,p
 		margin .5em 0
 
-	a
-		text-decoration none
-		border-bottom 2px dashed
-		font-weight bold
-		color inherit
+		a
+			text-decoration none
+			// border-bottom 2px dashed
+			font-weight bold
+			color inherit
 
 .controls
 	position fixed

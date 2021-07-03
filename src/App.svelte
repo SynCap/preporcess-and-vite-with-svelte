@@ -137,7 +137,7 @@ $sideBG = radial-gradient(circle at top left, rgba(210, 10, 10, 0.5), rgba(110, 
 	position relative
 	transform-style preserve-3d
 	transform rotateY(-30deg) rotateZ(20deg) rotateX(-30deg)
-	animation rotate 5s linear infinite
+	animation rotate 10s linear infinite
 
 	& > *
 		background-image $sideBG
@@ -174,11 +174,11 @@ $sideBG = radial-gradient(circle at top left, rgba(210, 10, 10, 0.5), rgba(110, 
 
 @keyframes rotate
 	0%
-		transform rotateX(0deg) rotateY(-70deg) rotateZ(60deg)
+		transform rotateX(0deg) rotateY(-210deg) rotateZ(60deg)
 	50%
-		transform rotateX(180deg) rotateY(70deg) rotateZ(-160deg)
+		transform rotateX(180deg) rotateY(210deg) rotateZ(-90deg)
 	100%
-		transform rotateX(360deg) rotateY(-70deg) rotateZ(60deg)
+		transform rotateX(720deg) rotateY(-210deg) rotateZ(60deg)
 
 /**********************************************************/
 

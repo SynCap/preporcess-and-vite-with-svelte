@@ -41,9 +41,9 @@ $: {
 		p
 			button(on:click!='{()=> dY -= delta}' title='-Y') &#8679;
 		p
-			button(on:click!='{()=> dX -= delta}' title='-X') &#8678;
+			button.sup(on:click!='{()=> dX -= delta}' title='-X') &#8678;
 			button(on:click!='{()=> dY += delta}' title='+Y') &#8681;
-			button(on:click!='{()=> dX += delta}' title='+X') &#8680;
+			button.sup(on:click!='{()=> dX += delta}' title='+X') &#8680;
 
 </template>
 
@@ -86,6 +86,9 @@ head
 		box-shadow 0 1rem .3rem .2rem alpha(#000, .5)
 		cursor pointer
 		transition all .4s
+
+		&.sup
+			transform translateY(-50%)
 
 		&:hover
 			background-color alpha(lime, .9)

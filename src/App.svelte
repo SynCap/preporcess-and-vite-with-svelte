@@ -192,4 +192,8 @@ $sideBG = radial-gradient(circle at top left, rgba(210, 10, 10, 0.5), rgba(110, 
 
 :global(input)
 	font inherit
+
+:global(body)
+	font 14pt/1 sans-serif
+
 </style>

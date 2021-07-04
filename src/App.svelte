@@ -61,7 +61,7 @@ head
 	color alpha(white, .7)
 	text-shadow .1em .1em .1em alpha(black, .5)
 	// border-bottom .15px dashed
-	max-width 37rem
+	max-width 42rem
 	margin 2rem auto
 	padding 1rem
 
@@ -69,10 +69,11 @@ head
 		color inherit
 
 		svg
-			width 1em
+			width .8em
 			height @width
 			fill alpha(white, .7)
 			display inline-block
+			margin 0 .3em
 
 	h1,p
 		margin .5em 0

@@ -27,7 +27,7 @@ export default defineConfig({
 				},
 				sourceMap: !production,
 				svelte: {
-					prependData: "@require 'styles/global.styl'\n",
+					prependData: "@require '.src/styles/global.styl'\n",
 				},
 				postcss: {
 					plugins: [require('autoprefixer')()]

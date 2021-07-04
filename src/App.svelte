@@ -40,7 +40,7 @@ $: {
 	.cinema
 		.scene(style='{transformStyle}')
 			.cube
-				- for(i=1; i < 7; i++)
+				- for(let i=1;i<7;i++)
 					div(class=`side-${i}`)
 						svg
 							use(href=`#c${i}`)

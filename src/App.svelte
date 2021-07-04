@@ -18,13 +18,17 @@ $: {
 
 <template lang='pug'>
 	include ./inc/dice-sprites.svg.pug
+	include ./inc/icon-sprites-x64.svg.pug
 
 	svelte:head
 		title {title}
 
 	head
 		h1(title='Vaya Con Dios')
-			a(href='https://github.com/SynCap/preporcess-and-vite-with-svelte') {title}
+			a(href='https://github.com/SynCap/preporcess-and-vite-with-svelte')
+				| {title}
+				svg(preserveAspectRatio='xMidYMid meet')
+					use(href='#gh-icon')
 		p.
 			#[a(href='https://svelte.dev') Svelte] template with
 			#[a(href='https://github.com/sveltejs/svelte-preprocess') preprocess]
@@ -62,16 +66,25 @@ head
 	padding 1rem
 
 	h1
-		color inheri
+		color inherit
+
+		svg
+			width 1em
+			height @width
+			fill alpha(white, .7)
+			display inline-block
 
 	h1,p
 		margin .5em 0
 
 		a
 			text-decoration none
-			// border-bottom 2px dashed
+			border-bottom 2px dashed alpha(#ccc, .3)
 			font-weight bold
 			color inherit
+
+			&:hover
+				border-bottom-color alpha(#eee, .7)
 
 .controls
 	position fixed

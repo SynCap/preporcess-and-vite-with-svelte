@@ -10,6 +10,16 @@ let transformStyle: string;
 
 const delta: number = 10;
 
+function handleArrowKeys(e) {
+	console.info('keydown:', e.key);
+	switch(e.key) {
+		case 'ArrowUp': dY -= delta; return false;
+		case 'ArrowDown': dY += delta; return false;
+		case 'ArrowLeft': dX -= delta; return false;
+		case 'ArrowRight': dX += delta; return false;
+	}
+}
+
 $: {
 	transformStyle = `transform: translateX(${dX}vw) translateY(${dY}vh)`
 }
@@ -22,6 +32,8 @@ $: {
 
 	svelte:head
 		title {title}
+
+	svelte:body(on:keydown='{handleArrowKeys}')
 
 	head
 		h1(title='Vaya Con Dios')
@@ -74,6 +86,7 @@ head
 			fill alpha(white, .7)
 			display inline-block
 			margin 0 .3em
+			filter drop-shadow(.1em .1em .1em alpha(black, .5))
 
 	h1,p
 		margin .5em 0
@@ -108,6 +121,7 @@ head
 		font-size 2rem
 		min-width 5rem
 		box-shadow 0 1rem .5rem .5rem alpha(#000, .2)
+		text-shadow: 0.1em 0.1em 0.2em black
 		cursor pointer
 		transition all .4s
 

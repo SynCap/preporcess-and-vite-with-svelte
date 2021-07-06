@@ -5,9 +5,6 @@ npm-*.log
 pnpm-*.log
 yarn-*.log
 
-# Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode,sublimetext,vim
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,visualstudiocode,sublimetext,vim
-
 ### Linux ###
 *~
 
@@ -63,7 +60,7 @@ Temporary Items
 
 # Project files should be checked into the repository, unless a significant
 # proportion of contributors will probably not be using Sublime Text
-# *.sublime-project
+*.sublime-project
 
 # SFTP configuration file
 sftp-config.json
@@ -146,5 +143,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode,sublimetext,vim
